@@ -63,6 +63,12 @@ $pad: 10px 20px;
   .button_offer:hover{
     background-color: orange;
   }
+  
+  .button_offer:active{
+    box-shadow: 0px 0px 0px 0px black;
+    transition: 0.5s
+  }
+
 
   .search_form {
     border: 3px solid black;
@@ -80,6 +86,40 @@ $pad: 10px 20px;
     box-shadow: none;
     
   }
+
+  .tabbar{
+    margin-top: 50px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .tabbar_tab{
+    color: grey;
+    padding: 25px;
+    text-align: center;
+  }
+
+  .tabbar_tab:hover,  .tabbar_tab:active{
+    color: rgb(20, 110, 190);
+    border-bottom: 5px solid rgb(20, 110, 190) ;
+  }
+  
+  .container_search{
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .selectbox{
+    font-size: 18px;
+    padding: 20px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    margin-left: 20px;
+  }
+
+
 
   @media (min-width: 576px) {
     .container {
