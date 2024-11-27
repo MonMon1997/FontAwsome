@@ -1,0 +1,106 @@
+$topbar_color : green;
+$pad: 10px 20px;
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 100%;
+    padding-left: 15px; /* 和 Bootstrap 一样的内边距 */
+    padding-right: 15px; /* 和 Bootstrap 一样的内边距 */
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+  }
+
+  .list{
+    list-style: none;
+  }
+
+  .list_group{
+    float: left;
+    padding: 1rem;
+    color: gray;
+  }
+
+  .list_group a{
+    text-decoration: none;
+    color: gray;
+  }
+
+  .list_group a:hover{
+    color: rgb(20, 110, 190);
+  }
+
+  .container_offer{
+    @extend .container;
+    border: 2px solid plum;
+    border-radius: 5px;
+    padding: 20px;
+    
+  }
+
+  .offer_msg{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: auto;
+  }
+
+  .button_offer{
+    padding: 20px;
+    width: 50%;
+    font-size: 1rem;
+    background-color: yellow;
+    border-radius: 8px;
+    box-shadow: 0px 8px 0px 0px black;
+  }
+
+  .button_offer:hover{
+    background-color: orange;
+  }
+
+  .search_form {
+    border: 3px solid black;
+    border-radius: 30px;
+    margin-top: 20px;
+    text-align: center;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  #form_search:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    
+  }
+
+  @media (min-width: 576px) {
+    .container {
+      max-width: 540px; /* 相当于 .container-sm */
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px; /* 相当于 .container-md */
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .container {
+      max-width: 960px; /* 相当于 .container-lg */
+    }
+  }
+  
+  @media (min-width: 1400px) {
+    .container {
+      max-width: 1080px; /* 相当于 .container-xxl */
+    }
+  }
